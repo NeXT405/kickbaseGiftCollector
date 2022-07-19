@@ -41,5 +41,13 @@ Example for collector bot on a raspberry pi (OS: burster or higher)
     ```
  5. wait until cronjob trigger and enjoy.
 
+## Usage with Docker 
 
+### Build the container
+```docker build -t kickbasegiftcollector:1.0 .```
 
+### Get league id
+```docker run -d -e USERNAME=<USERNAME> -e PASSWORD=<PASSWORD> kickbasegiftcollector:1.0```
+
+### Run the container
+```docker run -d -e USERNAME=<USERNAME> -e PASSWORD=<PASSWORD> -e LEAGUEID=<LEAGUEID> kickbasegiftcollector:1.0```
